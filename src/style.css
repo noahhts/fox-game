@@ -78,6 +78,10 @@ body {
   right: 0;
   background-color: blueviolet;
   color: white;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 15px;
 }
 .modal:empty {
   display: none;
