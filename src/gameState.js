@@ -22,7 +22,6 @@ const gameState = {
   timeToEndCelebrating: -1,
   tick() {
     this.clock++;
-    console.log("clock", this.clock);
     if (this.clock === this.wakeTime) this.wake();
     else if (this.clock === this.sleepTime) this.sleep();
     else if (this.clock === this.hungryTime) this.getHungry();
