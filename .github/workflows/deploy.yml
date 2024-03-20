@@ -9,9 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: npm install and build
         run: |
-          npm install
+          npm ci
           npm run build -- --public-url /fox-game/
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
